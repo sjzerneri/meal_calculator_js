@@ -1,5 +1,5 @@
 function start() {
-    console.log('starting meal calculator');
+    console.log('Meal calculator is running....');
 };
 
 start();
@@ -73,11 +73,14 @@ Diner.prototype.dinerCost = function(dinerArray) {
 
 //iterate over each diner
 
-for (j=0; j < dinerArray.length; j++) {
-	dinerArray[j].dinerCost(dinerArray);
-};
+function calculateDinerCost(dinerArray) {
+    for (j = 0; j < dinerArray.length; j++) {
+        dinerArray[j].dinerCost(dinerArray);
+    };
+}
 
 //dine together and split the bill
 
 
-
+//run
+calculateDinerCost(dinerArray);
